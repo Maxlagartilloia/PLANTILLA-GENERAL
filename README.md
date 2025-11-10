@@ -1,2 +1,4 @@
-# PLANTILLA-GENERAL
-PLANTILLA PARA TODAS LAS PAGINAS WEB
+# Criss App Template
+- React + Vite + Netlify
+- Build: npm run build
+- Publish: dist
