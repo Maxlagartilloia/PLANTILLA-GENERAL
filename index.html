@@ -1,182 +1,182 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cerrajería Totti | Soldadura Profesional</title>
-    <meta name="description" content="Puertas, ventanas, portones y estructuras metálicas a medida. Cotiza por WhatsApp. Entrega segura y garantía." />
-    <meta property="og:title" content="Cerrajería Totti | Soldadura Profesional" />
-    <meta property="og:description" content="Puertas, ventanas, portones y estructuras metálicas a medida. Cotiza por WhatsApp." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/img/hero.webp" />
-    <link rel="icon" href="/assets/img/logo.png" />
-    <!-- 🔥 IMPORTANTE: CSS estático (ya NO /src/...) -->
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <!-- Fondo 3D liviano -->
-    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cerrajería Totti | Soldadura Profesional</title>
+  <meta name="description" content="Puertas, ventanas, portones y estructuras metálicas a medida. Cotiza por WhatsApp. Entrega segura y garantía.">
+  <meta property="og:title" content="Cerrajería Totti | Soldadura Profesional">
+  <meta property="og:description" content="Puertas, ventanas, portones y estructuras metálicas a medida. Cotiza por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/img/hero.webp">
+  <link rel="icon" href="/assets/img/logo.png">
+  <!-- ✅ CSS directo en raíz -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Fondo 3D -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-    <!-- HEADER -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <img id="brandLogo" src="/assets/img/logo.png" alt="Logo Cerrajería Totti" />
-          <span id="businessName">Cerrajería Totti</span>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img id="brandLogo" src="/assets/img/logo.png" alt="Logo Cerrajería Totti">
+        <span id="businessName">Cerrajería Totti</span>
+      </div>
+      <nav class="nav">
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Trabajos</a>
+        <a href="#quote">Cotizar</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contact">Contacto</a>
+        <a id="navCta" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy glass">
+        <h1 id="heroTitle">Puertas y Ventanas Metálicas • Soldadura Profesional</h1>
+        <p id="heroSub">Diseño a medida, instalación segura y acabados de primera.</p>
+        <ul class="bullets" id="heroBullets"></ul>
+        <div class="cta-group">
+          <a id="ctaPrimary" class="btn btn-primary" href="#quote">Cotizar ahora</a>
+          <a id="ctaSecondary" class="btn btn-ghost" href="#portfolio">Ver trabajos</a>
         </div>
-        <nav class="nav">
-          <a href="#services">Servicios</a>
-          <a href="#portfolio">Trabajos</a>
-          <a href="#quote">Cotizar</a>
-          <a href="#faq">Preguntas</a>
-          <a href="#contact">Contacto</a>
-          <a id="navCta" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
-        </nav>
+        <div class="badges" id="heroBadges"></div>
       </div>
-    </header>
+      <figure class="hero-media">
+        <img id="heroImage" src="/assets/img/hero.webp" alt="Trabajo de soldadura" loading="lazy">
+      </figure>
+    </div>
+  </section>
 
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy glass">
-          <h1 id="heroTitle">Puertas y Ventanas Metálicas • Soldadura Profesional</h1>
-          <p id="heroSub">Diseño a medida, instalación segura y acabados de primera.</p>
-          <ul class="bullets" id="heroBullets"></ul>
-          <div class="cta-group">
-            <a id="ctaPrimary" class="btn btn-primary" href="#quote">Cotizar ahora</a>
-            <a id="ctaSecondary" class="btn btn-ghost" href="#portfolio">Ver trabajos</a>
-          </div>
-          <div class="badges" id="heroBadges"></div>
+  <!-- SERVICIOS -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Servicios de soldadura y fabricación</h2>
+      <div id="servicesGrid" class="grid services-grid"></div>
+    </div>
+  </section>
+
+  <!-- COTIZADOR -->
+  <section id="quote" class="section alt">
+    <div class="container">
+      <h2>Cotiza tu proyecto</h2>
+      <p>Envíanos medidas y te respondemos por WhatsApp.</p>
+
+      <form id="quoteForm" class="form">
+        <div class="grid form-grid">
+          <label>Tu nombre
+            <input name="nombre" type="text" required>
+          </label>
+          <label>Tu teléfono
+            <input name="telefono" type="tel" required>
+          </label>
+          <label>¿Qué necesitas?
+            <select name="servicio" required>
+              <option>Puerta</option><option>Ventana</option><option>Portón</option>
+              <option>Techo</option><option>Baranda/Escalera</option><option>Estructura</option><option>Otro</option>
+            </select>
+          </label>
+          <label>Ancho (cm)
+            <input name="ancho" type="number" min="0" step="0.1">
+          </label>
+          <label>Alto (cm)
+            <input name="alto" type="number" min="0" step="0.1">
+          </label>
+          <label>Material preferido
+            <select name="material">
+              <option>Acero al carbón</option><option>Acero inoxidable</option><option>Aluminio</option>
+            </select>
+          </label>
+          <label>Ubicación (sector/ciudad)
+            <input name="ubicacion" type="text">
+          </label>
+          <label class="full">Descripción adicional
+            <textarea name="descripcion" rows="3"></textarea>
+          </label>
         </div>
-        <figure class="hero-media">
-          <img id="heroImage" src="/assets/img/hero.webp" alt="Trabajo de soldadura" loading="lazy" />
-        </figure>
+        <button class="btn btn-primary" type="submit">Enviar a WhatsApp</button>
+        <p class="privacy">Tus datos se usan solo para cotizar.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Trabajos recientes</h2>
+      <div id="gallery" class="masonry"></div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video" class="section alt">
+    <div class="container">
+      <h2>Proceso y resultados en video</h2>
+      <div id="videoEmbeds" class="grid video-grid"></div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why_us" class="section">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <div id="features" class="grid features-grid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2>Preguntas frecuentes</h2>
+      <div id="faqList" class="accordion"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="section">
+    <div class="container contact">
+      <div>
+        <h2>¿Listo para cotizar?</h2>
+        <p>Escríbenos por WhatsApp y te respondemos hoy.</p>
+        <a id="contactCta" class="btn btn-primary" target="_blank" rel="noopener">Chatear por WhatsApp</a>
       </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="services" class="section">
-      <div class="container">
-        <h2>Servicios de soldadura y fabricación</h2>
-        <div id="servicesGrid" class="grid services-grid"></div>
+      <div class="contact-data">
+        <p id="address"></p>
+        <p id="phone"></p>
+        <p id="email"></p>
+        <p id="social"></p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- COTIZADOR / FORM -->
-    <section id="quote" class="section alt">
-      <div class="container">
-        <h2>Cotiza tu proyecto</h2>
-        <p>Envíanos medidas y te respondemos por WhatsApp.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year"></span> <span id="footerName">Cerrajería Totti</span>. Todos los derechos reservados.</div>
+    </div>
+  </footer>
 
-        <form id="quoteForm" class="form">
-          <div class="grid form-grid">
-            <label>Tu nombre
-              <input name="nombre" type="text" required />
-            </label>
-            <label>Tu teléfono
-              <input name="telefono" type="tel" required />
-            </label>
-            <label>¿Qué necesitas?
-              <select name="servicio" required>
-                <option>Puerta</option><option>Ventana</option><option>Portón</option>
-                <option>Techo</option><option>Baranda/Escalera</option><option>Estructura</option><option>Otro</option>
-              </select>
-            </label>
-            <label>Ancho (cm)
-              <input name="ancho" type="number" min="0" step="0.1" />
-            </label>
-            <label>Alto (cm)
-              <input name="alto" type="number" min="0" step="0.1" />
-            </label>
-            <label>Material preferido
-              <select name="material">
-                <option>Acero al carbón</option><option>Acero inoxidable</option><option>Aluminio</option>
-              </select>
-            </label>
-            <label>Ubicación (sector/ciudad)
-              <input name="ubicacion" type="text" />
-            </label>
-            <label class="full">Descripción adicional
-              <textarea name="descripcion" rows="3"></textarea>
-            </label>
-          </div>
-          <button class="btn btn-primary" type="submit">Enviar a WhatsApp</button>
-          <p class="privacy">Tus datos se usan solo para cotizar.</p>
-        </form>
-      </div>
-    </section>
+  <!-- MODAL 3D para imágenes -->
+  <dialog id="imgModal" class="modal">
+    <div class="modal-content glass">
+      <button id="modalClose" class="modal-close" aria-label="Cerrar">&times;</button>
+      <img id="modalImg" alt="Vista ampliada">
+      <p id="modalCaption"></p>
+    </div>
+  </dialog>
 
-    <!-- PORTAFOLIO -->
-    <section id="portfolio" class="section">
-      <div class="container">
-        <h2>Trabajos recientes</h2>
-        <div id="gallery" class="masonry"></div>
-      </div>
-    </section>
+  <!-- FAB WhatsApp -->
+  <a id="whatsapp-fab" href="#" target="_blank" aria-label="Chatear por WhatsApp" title="Cotiza ahora por WhatsApp" class="whatsapp-fab">
+    <img src="/assets/img/whatsapp.svg" alt="WhatsApp">
+  </a>
 
-    <!-- VIDEO -->
-    <section id="video" class="section alt">
-      <div class="container">
-        <h2>Proceso y resultados en video</h2>
-        <div id="videoEmbeds" class="grid video-grid"></div>
-      </div>
-    </section>
-
-    <!-- WHY US -->
-    <section id="why_us" class="section">
-      <div class="container">
-        <h2>¿Por qué elegirnos?</h2>
-        <div id="features" class="grid features-grid"></div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section alt">
-      <div class="container">
-        <h2>Preguntas frecuentes</h2>
-        <div id="faqList" class="accordion"></div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contact" class="section">
-      <div class="container contact">
-        <div>
-          <h2>¿Listo para cotizar?</h2>
-          <p>Escríbenos por WhatsApp y te respondemos hoy.</p>
-          <a id="contactCta" class="btn btn-primary" target="_blank" rel="noopener">Chatear por WhatsApp</a>
-        </div>
-        <div class="contact-data">
-          <p id="address"></p>
-          <p id="phone"></p>
-          <p id="email"></p>
-          <p id="social"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>&copy; <span id="year"></span> <span id="footerName">Cerrajería Totti</span>. Todos los derechos reservados.</div>
-      </div>
-    </footer>
-
-    <!-- MODAL 3D para imágenes -->
-    <dialog id="imgModal" class="modal">
-      <div class="modal-content glass">
-        <button id="modalClose" class="modal-close" aria-label="Cerrar">&times;</button>
-        <img id="modalImg" alt="Vista ampliada" />
-        <p id="modalCaption"></p>
-      </div>
-    </dialog>
-
-    <!-- FAB WhatsApp -->
-    <a id="whatsapp-fab" href="#" target="_blank" aria-label="Chatear por WhatsApp" title="Cotiza ahora por WhatsApp" class="whatsapp-fab">
-      <img src="/assets/img/whatsapp.svg" alt="WhatsApp" />
-    </a>
-
-    <!-- 🔥 IMPORTANTE: JS estático (ya NO /src/..., ni imports de Vite) -->
-    <script src="/js/main.js" defer></script>
-  </body>
+  <!-- ✅ JS directo en raíz -->
+  <script src="/main.js" defer></script>
+</body>
 </html>
