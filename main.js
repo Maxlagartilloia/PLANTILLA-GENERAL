@@ -1,5 +1,5 @@
-// Ruta del JSON estático
-const CONFIG_URL = '/prompts/cerrajeria-totti.json';
+// JSON de configuración (en raíz)
+const CONFIG_URL = '/cerrajeria-totti.json';
 
 (async () => {
   const resp = await fetch(CONFIG_URL);
@@ -101,7 +101,6 @@ const CONFIG_URL = '/prompts/cerrajeria-totti.json';
       modalImg.src = img.src;
       modalCaption.textContent = g.caption || '';
       modal.showModal();
-      modal.querySelector('.modal-content').style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg)';
     });
     gallery.appendChild(img);
   });
@@ -111,7 +110,7 @@ const CONFIG_URL = '/prompts/cerrajeria-totti.json';
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') modal.close(); });
   }
 
-  // ====== VIDEOS (lazy) ======
+  // ====== VIDEOS ======
   const videoEmbeds = document.getElementById('videoEmbeds');
   const mkEmbed = (v) => {
     if (!v.url) return '';
@@ -140,7 +139,7 @@ const CONFIG_URL = '/prompts/cerrajeria-totti.json';
     window.open(url, '_blank', 'noopener');
   });
 
-  // ====== Background 3D (partículas ligeras) ======
+  // ====== Fondo 3D (partículas) ======
   const canvas = document.getElementById('bg-canvas');
   const ctx = canvas.getContext('2d');
   let w, h, particles;
