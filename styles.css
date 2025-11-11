@@ -76,7 +76,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--c-second
 
 .modal{border:none;border-radius:14px;padding:0;background:transparent}
 .modal::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
-.modal-content{transform-style:preserve-3d;border-radius:14px;overflow:hidden}
+.modal-content{transform-style:preserve-3d;border-radius:14px;overflow:hidden;position:relative}
 .modal-content img{max-width:80vw;max-height:75vh;display:block}
 .modal-close{position:absolute;top:8px;right:12px;background:rgba(0,0,0,.6);color:#fff;border:none;border-radius:8px;padding:6px 10px;cursor:pointer}
 
