@@ -2,7 +2,7 @@
   "brand": {
     "business_name": "Cerrajería Totti",
     "tagline": "Soldadura profesional: puertas, ventanas y estructuras a medida",
-    "logo_file": "/src/assets/img/logo.png",
+    "logo_file": "/assets/img/logo.png",
     "palette": {
       "primary": "#123B6B",
       "primary700": "#0E2F55",
@@ -10,14 +10,8 @@
       "secondary200": "#B8E1FF",
       "accent": "#FF8A27",
       "accent700": "#E06B00",
-      "chromeDark": "#2B2F36",
-      "chromeLight": "#E6EAEE",
       "bg": "#0A0F17",
       "text": "#FFFFFF"
-    },
-    "fonts": {
-      "headings": "Poppins, Inter, system-ui, sans-serif",
-      "body": "Inter, system-ui, sans-serif"
     }
   },
   "contact": {
@@ -27,13 +21,7 @@
     "whatsapp_click_to_chat": "https://wa.me/593969881264?text=Hola%20Cerrajer%C3%ADa%20Totti%2C%20quiero%20una%20proforma.",
     "email": "titocarvajal1000@gmail.com",
     "address": "Barrio Integración Social, calles Atahualpa entre Brasil y Venezuela, Shushufindi, Ecuador",
-    "social_label": "Cerrajería Totti",
-    "social_links": {
-      "facebook": "",
-      "instagram": "",
-      "tiktok": "",
-      "youtube": ""
-    }
+    "social_label": "Cerrajería Totti"
   },
   "hero": {
     "title": "Puertas y Ventanas Metálicas • Soldadura Profesional",
@@ -49,7 +37,7 @@
       "Servicio en Sucumbíos",
       "Garantía escrita"
     ],
-    "image": "/src/assets/img/hero.webp"
+    "image": "/assets/img/hero.webp"
   },
   "services": [
     { "title": "Puertas y Portones", "desc": "Corredizos, seccionales y de seguridad." },
@@ -58,21 +46,6 @@
     { "title": "Escaleras y Barandas", "desc": "Interiores y exteriores con acabado premium." },
     { "title": "Carrocerías y Corrales", "desc": "Refuerzo y fabricación a medida." },
     { "title": "Mantenimiento y Reparación", "desc": "Soldadura eléctrica, TIG, MIG y oxicorte." }
-  ],
-  "capabilities": [
-    "Trabajos de soldadura eléctrica, TIC/TIG, MIG y oxicorte.",
-    "Realizamos: Techos, coliseos, corrales de ganado, carrocerías, puertas, ventanas, portones, escaleras metálicas, estructuras de losas y cerramientos estructurales."
-  ],
-  "gallery": [
-    { "src": "/src/assets/img/trabajo1.webp", "caption": "Portón metálico corredizo" },
-    { "src": "/src/assets/img/trabajo2.webp", "caption": "Ventanas con reja anti-intrusión" },
-    { "src": "/src/assets/img/trabajo3.webp", "caption": "Escalera metálica interior" },
-    { "src": "/src/assets/img/trabajo4.webp", "caption": "Estructura de techo para galpón" }
-  ],
-  "videos": [
-    { "platform": "youtube", "url": "" },
-    { "platform": "youtube", "url": "" },
-    { "platform": "tiktok", "url": "" }
   ],
   "features": [
     { "title": "Medición exacta", "desc": "Vamos a tu obra y tomamos medidas profesionales." },
@@ -85,5 +58,16 @@
     { "q": "¿Trabajan a domicilio?", "a": "Sí, medimos e instalamos en tu obra o domicilio." },
     { "q": "¿Dan garantía?", "a": "Sí, garantía por escrito según el trabajo." },
     { "q": "¿Qué métodos de pago aceptan?", "a": "Efectivo, transferencia y pago contraentrega (según el caso)." }
+  ],
+  "gallery": [
+    { "src": "/assets/img/trabajo1.webp", "caption": "Portón metálico corredizo" },
+    { "src": "/assets/img/trabajo2.webp", "caption": "Ventanas con reja anti-intrusión" },
+    { "src": "/assets/img/trabajo3.webp", "caption": "Escalera metálica interior" },
+    { "src": "/assets/img/trabajo4.webp", "caption": "Estructura de techo para galpón" }
+  ],
+  "videos": [
+    { "platform": "youtube", "url": "" },
+    { "platform": "youtube", "url": "" },
+    { "platform": "tiktok", "url": "" }
   ]
 }
