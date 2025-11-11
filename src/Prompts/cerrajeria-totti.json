@@ -1,259 +1,89 @@
 {
-  "role": "website_generator",
-  "goal": "Crear una landing page moderna y optimizada para convertir clientes de un taller de soldadura y estructuras metálicas (puertas, ventanas, portones, techos, escaleras, barandas, corrales, carrocerías y mantenimiento).",
   "brand": {
     "business_name": "Cerrajería Totti",
     "tagline": "Soldadura profesional: puertas, ventanas y estructuras a medida",
-    "short_pitch": "Fabricamos con precisión, acabados premium y entrega puntual.",
-    "logo_file": "https://i.postimg.cc/q7BBprcS/IMG-0002.png",
-    "brand_palette_mode": "usar_paleta_personalizada",
+    "logo_file": "/src/assets/img/logo.png",
     "palette": {
       "primary": "#123B6B",
-      "primary-700": "#0E2F55",
+      "primary700": "#0E2F55",
       "secondary": "#2491D9",
-      "secondary-200": "#B8E1FF",
+      "secondary200": "#B8E1FF",
       "accent": "#FF8A27",
-      "accent-700": "#E06B00",
-      "chrome-dark": "#2B2F36",
-      "chrome-light": "#E6EAEE",
+      "accent700": "#E06B00",
+      "chromeDark": "#2B2F36",
+      "chromeLight": "#E6EAEE",
       "bg": "#0A0F17",
       "text": "#FFFFFF"
     },
-    "brand_fonts": {
+    "fonts": {
       "headings": "Poppins, Inter, system-ui, sans-serif",
       "body": "Inter, system-ui, sans-serif"
     }
   },
   "contact": {
     "owner_name": "Tito Carvajal",
-    "phone_raw": "+593969881264",
+    "phone_human": "+593 96 988 1264",
+    "phone_e164_wa": "593969881264",
     "whatsapp_click_to_chat": "https://wa.me/593969881264?text=Hola%20Cerrajer%C3%ADa%20Totti%2C%20quiero%20una%20proforma.",
     "email": "titocarvajal1000@gmail.com",
-    "address": "Barrio Integración Social, Shushufindi, Ecuador",
-    "maps_embed": "",
-    "social": {
-      "facebook": "https://facebook.com/CerrajeriaTotti",
-      "instagram": "https://instagram.com/CerrajeriaTotti",
-      "tiktok": "https://www.tiktok.com/@CerrajeriaTotti",
-      "youtube": "https://youtube.com/@CerrajeriaTotti"
+    "address": "Barrio Integración Social, calles Atahualpa entre Brasil y Venezuela, Shushufindi, Ecuador",
+    "social_label": "Cerrajería Totti",
+    "social_links": {
+      "facebook": "",
+      "instagram": "",
+      "tiktok": "",
+      "youtube": ""
     }
   },
-  "functional_requirements": {
-    "architecture": "HTML + CSS + JS sin frameworks (index.html + assets). Listo para Netlify.",
-    "responsiveness": "Mobile-first (360, 768, 1024, 1280).",
-    "performance": "Lazy-loading, imágenes WebP/AVIF, minificación, preconnect.",
-    "seo": {
-      "title": "Cerrajería Totti | Puertas y Ventanas Metálicas | Soldadura Profesional",
-      "meta_description": "Puertas, ventanas, portones y estructuras metálicas a medida. Cotiza por WhatsApp. Entrega segura y garantía.",
-      "open_graph": true,
-      "twitter_cards": true,
-      "schema_org": ["LocalBusiness", "Product", "Service", "FAQPage"]
-    },
-    "accessibility": "WCAG AA: contraste, focus visible, aria-labels, texto alternativo.",
-    "analytics": ""
-  },
-  "ui_kit": {
-    "buttons": {
-      "rounded": true,
-      "hover_elevation": true,
-      "gradient_primary": "linear-gradient(135deg, #123B6B 0%, #2491D9 100%)",
-      "whatsapp_fab": {
-        "shape": "circular",
-        "position": "fixed-bottom-right",
-        "aria_label": "Chatear por WhatsApp",
-        "tooltip": "Cotiza ahora por WhatsApp",
-        "click_action": "abrir https://wa.me/593969881264?text=Hola%20Cerrajer%C3%ADa%20Totti%2C%20quiero%20una%20proforma."
-      }
-    },
-    "cards": {
-      "style": "glassmorphism (blur y borde) con sombra suave",
-      "hover_3d_tilt": true
-    },
-    "3d_background": {
-      "type": "partículas y destellos tipo chispa de soldadura",
-      "tech": "CSS + JS vanilla (<60kb)",
-      "colors": ["#2491D9", "#FF8A27", "#FFFFFF15"]
-    },
-    "modals_3d": {
-      "enabled": true,
-      "effect": "zoom-in + tilt 3D + backdrop-filter: blur(8px)",
-      "uses": ["Galería en grande", "Ficha técnica", "Testimonios en video"]
-    }
-  },
-  "information_architecture": {
-    "header": {
-      "logo_left": true,
-      "menu_items": ["Inicio", "Servicios", "Trabajos", "Cotizar", "Reseñas", "Preguntas", "Contacto"],
-      "cta_right": "WhatsApp"
-    },
-    "sections": [
-      {
-        "id": "hero",
-        "type": "fold",
-        "intent": "Conversión inmediata",
-        "content": {
-          "h1": "Puertas y Ventanas Metálicas • Soldadura Profesional",
-          "sub": "Diseño a medida, instalación segura y acabados de primera.",
-          "bullets": ["Fabricación y mantenimiento", "Estructuras resistentes", "Entrega puntual", "Garantía real"],
-          "primary_cta": "Cotizar ahora",
-          "secondary_cta": "Ver trabajos",
-          "badges": ["Atención rápida por WhatsApp", "Servicio en Shushufindi y alrededores", "Garantía escrita"]
-        },
-        "media": {
-          "hero_image": "",
-          "owner_photo": "",
-          "overlay_video_loop_optional": ""
-        }
-      },
-      {
-        "id": "services",
-        "type": "grid",
-        "title": "Servicios de soldadura y fabricación",
-        "cards": [
-          {"title":"Puertas y Portones","desc":"Corredizos, seccionales y de seguridad.","icon":"door"},
-          {"title":"Ventanas y Rejas","desc":"Diseño moderno, anti-óxido y anti-intrusión.","icon":"window"},
-          {"title":"Estructuras y Techos","desc":"Galpones, cubiertas y losas metálicas.","icon":"factory"},
-          {"title":"Escaleras y Barandas","desc":"Interiores y exteriores con acabado premium.","icon":"stairs"},
-          {"title":"Carrocerías y Corrales","desc":"Refuerzo y fabricación a medida.","icon":"truck"},
-          {"title":"Mantenimiento y Reparación","desc":"Soldadura TIG/MIG/eléctrica, ajustes y pintura.","icon":"tools"}
-        ],
-        "cta": "Solicitar proforma"
-      },
-      {
-        "id": "calculator_quote",
-        "type": "form",
-        "title": "Cotiza tu proyecto",
-        "desc": "Envíanos medidas y fotos y te respondemos por WhatsApp.",
-        "fields": [
-          {"name":"nombre","label":"Tu nombre","type":"text","required":true},
-          {"name":"telefono","label":"Tu teléfono","type":"tel","required":true},
-          {"name":"servicio","label":"¿Qué necesitas?","type":"select","options":["Puerta","Ventana","Portón","Techo","Baranda/Escalera","Estructura","Otro"],"required":true},
-          {"name":"ancho","label":"Ancho (cm)","type":"number","min":0,"step":"0.1"},
-          {"name":"alto","label":"Alto (cm)","type":"number","min":0,"step":"0.1"},
-          {"name":"material","label":"Material preferido","type":"select","options":["Acero al carbón","Acero inoxidable","Aluminio"]},
-          {"name":"ubicacion","label":"Ubicación (sector/ciudad)","type":"text"},
-          {"name":"descripcion","label":"Descripción adicional","type":"textarea"},
-          {"name":"adjuntos","label":"Adjuntar fotos (opcional)","type":"file","accept":"image/*","multiple":true}
-        ],
-        "submit_label": "Enviar a WhatsApp",
-        "submit_action": "onSubmit construir URL de wa.me con los campos en texto y abrir en nueva pestaña",
-        "privacy_note": "Tus datos se usan solo para cotizar."
-      },
-      {
-        "id": "portfolio",
-        "type": "masonry_gallery",
-        "title": "Trabajos recientes",
-        "images": [],
-        "interaction": "click abre modal 3D con zoom y flechas",
-        "captions": true
-      },
-      {
-        "id": "video",
-        "type": "embeds",
-        "title": "Proceso y resultados en video",
-        "videos": [
-          {"platform":"youtube","url":""},
-          {"platform":"youtube","url":""},
-          {"platform":"tiktok","url":""}
-        ],
-        "lazy": true
-      },
-      {
-        "id": "why_us",
-        "type": "features",
-        "title": "¿Por qué elegirnos?",
-        "bullets": [
-          {"title":"Medición exacta","desc":"Vamos a tu obra y tomamos medidas profesionales."},
-          {"title":"Soldadura certificada","desc":"Experiencia en TIG/MIG/eléctrica, acabados limpios."},
-          {"title":"Resistencia y seguridad","desc":"Estructuras sólidas con materiales de calidad."},
-          {"title":"Entrega en fecha","desc":"Cumplimos cronogramas y damos garantía por escrito."}
-        ]
-      },
-      {
-        "id": "reviews",
-        "type": "testimonials",
-        "title": "Clientes satisfechos",
-        "items": [
-          {"name":"María L.","text":"Trabajo impecable y rápido. Recomendados al 100%.","rating":5},
-          {"name":"Carlos P.","text":"El portón quedó perfecto y dentro del presupuesto.","rating":5},
-          {"name":"Andrea G.","text":"Buen trato, medidas precisas y soldadura prolija.","rating":5}
-        ],
-        "cta": "Pedir referencia por WhatsApp"
-      },
-      {
-        "id": "faq",
-        "type": "accordion",
-        "title": "Preguntas frecuentes",
-        "items": [
-          {"q":"¿Cuánto tardan las fabricaciones?","a":"Puertas/ventanas simples: 3–7 días. Estructuras: 7–21 días."},
-          {"q":"¿Trabajan a domicilio?","a":"Sí, medimos e instalamos en tu obra o domicilio."},
-          {"q":"¿Dan garantía?","a":"Sí, garantía por escrito según el trabajo."},
-          {"q":"¿Qué métodos de pago aceptan?","a":"Efectivo, transferencia y pago contraentrega (según el caso)."}
-        ]
-      },
-      {
-        "id": "contact",
-        "type": "cta_block",
-        "title": "¿Listo para cotizar?",
-        "desc": "Escríbenos por WhatsApp y te respondemos hoy.",
-        "primary_cta": "Chatear por WhatsApp",
-        "secondary_cta": "Llamar ahora"
-      }
+  "hero": {
+    "title": "Puertas y Ventanas Metálicas • Soldadura Profesional",
+    "subtitle": "Diseño a medida, instalación segura y acabados de primera.",
+    "bullets": [
+      "Fabricación y mantenimiento",
+      "Estructuras resistentes",
+      "Entrega puntual",
+      "Garantía real"
     ],
-    "footer": {
-      "columns": [
-        {"title":"Cerrajería Totti","items":["Barrio Integración Social, Shushufindi","Lun–Sáb 8:00–18:00"]},
-        {"title":"Servicios","items":["Puertas y Ventanas","Portones","Techos","Estructuras","Escaleras","Mantenimiento"]},
-        {"title":"Contacto","items":["WhatsApp: +593 96 988 1264","Email: titocarvajal1000@gmail.com"]},
-        {"title":"Social","items":["Facebook","Instagram","TikTok","YouTube"]}
-      ],
-      "legal": "© 2025 Cerrajería Totti. Todos los derechos reservados."
-    }
-  },
-  "tech_specs": {
-    "files": ["index.html","assets/css/styles.css","assets/js/app.js","assets/img/*"],
-    "html_requirements": [
-      "Meta viewport",
-      "Meta SEO y OG",
-      "Script app.js al final del body",
-      "FAB WhatsApp con aria-label y title"
+    "badges": [
+      "Atención rápida por WhatsApp",
+      "Servicio en Sucumbíos",
+      "Garantía escrita"
     ],
-    "css_requirements": [
-      "Variables: --c-primary, --c-secondary, --c-accent, --c-bg, --c-text, --c-chrome-dark, --c-chrome-light",
-      "Gradiente primario (azules) y acento naranja para CTAs",
-      "Modo oscuro por defecto (fondo #0A0F17)",
-      "Bordes cromados en títulos (uso de text-shadow y degradado gris)"
-    ],
-    "js_requirements": [
-      "Construir URL de WhatsApp en submit con encodeURIComponent",
-      "LazyLoad con IntersectionObserver",
-      "Modal 3D (perspective + rotate) y cierre con ESC/overlay",
-      "Respetar prefers-reduced-motion"
-    ]
+    "image": "/src/assets/img/hero.webp"
   },
-  "whatsapp_logic_example": {
-    "pseudo_code": "onSubmit(e){e.preventDefault();const base='https://wa.me/593969881264';const data={nombre,telefono,servicio,ancho,alto,material,ubicacion,descripcion};const msg=`Hola, soy ${data.nombre}. Quiero cotizar: ${data.servicio}. Medidas: ${data.ancho}cm x ${data.alto}cm. Material: ${data.material}. Ubicación: ${data.ubicacion}. Detalles: ${data.descripcion}. Tel: ${data.telefono}`; const url=`${base}?text=${encodeURIComponent(msg)}`; window.open(url,'_blank');}"
-  },
-  "schema_org_examples": {
-    "LocalBusiness": {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Cerrajería Totti",
-      "image": "",
-      "url": "",
-      "telephone": "+593969881264",
-      "address": "Barrio Integración Social, Shushufindi, Ecuador",
-      "areaServed": "Sucumbíos",
-      "sameAs": ["https://facebook.com/CerrajeriaTotti","https://instagram.com/CerrajeriaTotti"]
-    }
-  },
-  "acceptance_criteria": [
-    "El botón flotante de WhatsApp funciona en móvil y escritorio.",
-    "El formulario arma el mensaje y abre WhatsApp con los datos.",
-    "Imágenes en WebP/AVIF con lazy-loading y fallback.",
-    "Embeds YouTube/TikTok con carga diferida.",
-    "Galería con modal 3D suave.",
-    "SEO + Schema.org válidos.",
-    "TTFB y LCP competitivos en 4G."
+  "services": [
+    { "title": "Puertas y Portones", "desc": "Corredizos, seccionales y de seguridad." },
+    { "title": "Ventanas y Rejas", "desc": "Diseño moderno, anti-óxido y anti-intrusión." },
+    { "title": "Techos y Estructuras", "desc": "Galpones, cubiertas y losas metálicas." },
+    { "title": "Escaleras y Barandas", "desc": "Interiores y exteriores con acabado premium." },
+    { "title": "Carrocerías y Corrales", "desc": "Refuerzo y fabricación a medida." },
+    { "title": "Mantenimiento y Reparación", "desc": "Soldadura eléctrica, TIG, MIG y oxicorte." }
+  ],
+  "capabilities": [
+    "Trabajos de soldadura eléctrica, TIC/TIG, MIG y oxicorte.",
+    "Realizamos: Techos, coliseos, corrales de ganado, carrocerías, puertas, ventanas, portones, escaleras metálicas, estructuras de losas y cerramientos estructurales."
+  ],
+  "gallery": [
+    { "src": "/src/assets/img/trabajo1.webp", "caption": "Portón metálico corredizo" },
+    { "src": "/src/assets/img/trabajo2.webp", "caption": "Ventanas con reja anti-intrusión" },
+    { "src": "/src/assets/img/trabajo3.webp", "caption": "Escalera metálica interior" },
+    { "src": "/src/assets/img/trabajo4.webp", "caption": "Estructura de techo para galpón" }
+  ],
+  "videos": [
+    { "platform": "youtube", "url": "" },
+    { "platform": "youtube", "url": "" },
+    { "platform": "tiktok", "url": "" }
+  ],
+  "features": [
+    { "title": "Medición exacta", "desc": "Vamos a tu obra y tomamos medidas profesionales." },
+    { "title": "Soldadura certificada", "desc": "Experiencia en TIG/MIG/eléctrica, acabados limpios." },
+    { "title": "Resistencia y seguridad", "desc": "Estructuras sólidas con materiales de calidad." },
+    { "title": "Entrega en fecha", "desc": "Cumplimos cronogramas y damos garantía por escrito." }
+  ],
+  "faq": [
+    { "q": "¿Cuánto tardan las fabricaciones?", "a": "Puertas/ventanas simples: 3–7 días. Estructuras: 7–21 días." },
+    { "q": "¿Trabajan a domicilio?", "a": "Sí, medimos e instalamos en tu obra o domicilio." },
+    { "q": "¿Dan garantía?", "a": "Sí, garantía por escrito según el trabajo." },
+    { "q": "¿Qué métodos de pago aceptan?", "a": "Efectivo, transferencia y pago contraentrega (según el caso)." }
   ]
 }
