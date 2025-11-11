@@ -8,8 +8,10 @@
     <meta property="og:title" content="Cerrajería Totti | Soldadura Profesional" />
     <meta property="og:description" content="Puertas, ventanas, portones y estructuras metálicas a medida. Cotiza por WhatsApp." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/src/assets/img/hero.webp" />
-    <link rel="icon" href="/src/assets/img/logo.png" />
+    <meta property="og:image" content="/assets/img/hero.webp" />
+    <link rel="icon" href="/assets/img/logo.png" />
+    <!-- 🔥 IMPORTANTE: CSS estático (ya NO /src/...) -->
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <!-- Fondo 3D liviano -->
@@ -19,7 +21,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <img id="brandLogo" src="/src/assets/img/logo.png" alt="Logo Cerrajería Totti" />
+          <img id="brandLogo" src="/assets/img/logo.png" alt="Logo Cerrajería Totti" />
           <span id="businessName">Cerrajería Totti</span>
         </div>
         <nav class="nav">
@@ -47,7 +49,7 @@
           <div class="badges" id="heroBadges"></div>
         </div>
         <figure class="hero-media">
-          <img id="heroImage" src="/src/assets/img/hero.webp" alt="Trabajo de soldadura" loading="lazy" />
+          <img id="heroImage" src="/assets/img/hero.webp" alt="Trabajo de soldadura" loading="lazy" />
         </figure>
       </div>
     </section>
@@ -171,9 +173,10 @@
 
     <!-- FAB WhatsApp -->
     <a id="whatsapp-fab" href="#" target="_blank" aria-label="Chatear por WhatsApp" title="Cotiza ahora por WhatsApp" class="whatsapp-fab">
-      <img src="/src/assets/img/whatsapp.svg" alt="WhatsApp" />
+      <img src="/assets/img/whatsapp.svg" alt="WhatsApp" />
     </a>
 
-    <script type="module" src="/src/main.js"></script>
+    <!-- 🔥 IMPORTANTE: JS estático (ya NO /src/..., ni imports de Vite) -->
+    <script src="/js/main.js" defer></script>
   </body>
 </html>
